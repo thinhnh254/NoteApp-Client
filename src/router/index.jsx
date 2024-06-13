@@ -3,10 +3,12 @@ import Login from "../pages/Login";
 import Home from "../pages/Home";
 import AuthLayout from "../pages/AuthLayout";
 import ProtectedRoute from "./ProtectedRoute";
+import NotFound from "../pages/NotFound";
 
 const router = createBrowserRouter([
   {
     element: <AuthLayout />,
+    errorElement: <NotFound />,
     children: [
       {
         path: "/login",
